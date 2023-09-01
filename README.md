@@ -2,7 +2,7 @@
 Tiktok弹幕抓取 发送websocket服务器   
 Receive live stream events such as comments and gifts and send to your websocket server tool in Go language.  free for one month   
 免费试用一个月 下载客户端  https://github.com/driftboat/TiktokBarrage/releases/download/1.0.0/Barrage.zip  
-续期,请联系 qq: 174389107  telegram：db_444444  
+续期低置40元每月,请联系 qq: 174389107  telegram：db_444444  
 Go语言实现，js注入  
 弹幕游戏服务器开发，房间消息转发,积分榜7天排名，单台服务器24小时压测支持1000主播同时播，1000 qps  
 ![avatar](images/tk1.png)
