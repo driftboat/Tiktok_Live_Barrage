@@ -89,7 +89,7 @@ func (c *Client) Read() {
 ```
 
 
-# 数据结构示例
+# Live message data structures
 All data structures are in the msgs directory
 ![avatar](images/tk2.png)
 
