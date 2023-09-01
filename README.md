@@ -1,6 +1,6 @@
 # tkbarrage
 Tiktok弹幕抓取 发送websocket服务器   
-Receive live stream events such as comments and gifts and send to your websocket server tool in Go language.  free for one month 
+Receive live stream events such as comments and gifts and send to your websocket server tool in Go language.  free for one month   
 免费试用一个月 下载客户端  https://github.com/driftboat/TiktokBarrage/releases/download/1.0.0/Barrage.zip  
 续期,请联系 qq: 174389107  telegram：db_444444  
 Go语言实现，js注入  
