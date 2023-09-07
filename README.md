@@ -8,7 +8,7 @@ Go语言实现，js注入
 ![avatar](images/tk1.png)
 
 # Server
- 服务器端(单台服务器24小时压测支持1000主播，1000 qps) https://github.com/driftboat/TiktokBarrage/releases/download/1.0.0/BarrageServer.zip  
+ 服务器端(单台服务器24小时压测支持1000主播，1000 qps) Window测试版： https://github.com/driftboat/TiktokBarrage/releases/download/1.0.0/BarrageServer.zip  
  - 运行需要redis， 修改conf/app.ini下的redis配置 如果redis6.0(ACL)， 开启username设置用户名  
  - 模拟结果 客户端模拟 http://www.jsons.cn/websocket/  
 ![image](https://github.com/driftboat/TiktokBarrage/assets/247809/22a97a4f-3222-4d1c-ad4d-8981751f32ef)
