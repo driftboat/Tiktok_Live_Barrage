@@ -7,6 +7,11 @@ Go语言实现，js注入
 另有弹幕游戏服务器开发，房间消息转发,积分榜7天排名，单台服务器24小时压测支持1000主播同时播，1000 qps  
 ![avatar](images/tk1.png)
 
+# Server
+ 服务器端即将发布
+ - 模拟结果 客户端模拟 http://www.jsons.cn/websocket/
+![image](https://github.com/driftboat/TiktokBarrage/assets/247809/22a97a4f-3222-4d1c-ad4d-8981751f32ef)
+
 # How to run
 - Download https://github.com/driftboat/TiktokBarrage/releases/download/1.0.0/Barrage.zip  
 - Unzip and run Barrage.exe  
