@@ -9,7 +9,7 @@ Go语言实现，js注入
 
 # Server
  服务器端即将发布 
- - 模拟结果 客户端模拟 http://www.jsons.cn/websocket/
+ - 模拟结果 客户端模拟 http://www.jsons.cn/websocket/  
 ![image](https://github.com/driftboat/TiktokBarrage/assets/247809/22a97a4f-3222-4d1c-ad4d-8981751f32ef)
  - 启动服务器，从服务器log获取房间id 如：（{"data":7275920301647465259,"level":"info","msg":"tiktok_chat","time":"2023-09-07 14:29:33"}）
  - 启动客户端，连上服务器才能获得上面的房间id  
