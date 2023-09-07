@@ -8,7 +8,7 @@ Go语言实现，js注入
 ![avatar](images/tk1.png)
 
 # Server
- 服务器端即将发布 
+ 服务器端即将发布 （api支持绑定房间，上传积分，连胜纪录，周排行榜(目前至多2个排行榜)）  
  - 模拟结果 客户端模拟 http://www.jsons.cn/websocket/  
 ![image](https://github.com/driftboat/TiktokBarrage/assets/247809/22a97a4f-3222-4d1c-ad4d-8981751f32ef)
  - 启动服务器，从服务器log获取房间id 如：（{"data":7275920301647465259,"level":"info","msg":"tiktok_chat","time":"2023-09-07 14:29:33"}）
