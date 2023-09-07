@@ -11,7 +11,8 @@ Go语言实现，js注入
  服务器端即将发布 
  - 模拟结果 客户端模拟 http://www.jsons.cn/websocket/
 ![image](https://github.com/driftboat/TiktokBarrage/assets/247809/22a97a4f-3222-4d1c-ad4d-8981751f32ef)
- - 启动服务器，从服务器log获取房间id（{"data":7275920301647465259,"level":"info","msg":"tiktok_chat","time":"2023-09-07 14:29:33"}）
+ - 启动服务器，从服务器log获取房间id 如：（{"data":7275920301647465259,"level":"info","msg":"tiktok_chat","time":"2023-09-07 14:29:33"}）
+ - 启动客户端，连上服务器才能获得上面的房间id  
    ![image](https://github.com/driftboat/TiktokBarrage/assets/247809/17cf5828-0f6d-4496-ad23-e22fb78aaf0b)
  - 绑定模拟客户端到对应房间，修改clientId为前面ws模拟客户端返回的clientid，groupName为服务器log获取的房间id
   ```
