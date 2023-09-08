@@ -116,3 +116,7 @@ func (c *Client) Read() {
 All data structures are in the msgs directory
 ![avatar](images/tk2.png)
 
+#ToDo
+- 服务器直接启动chrome抓取，无需客户端
+- 交叉编译linux服务器，linux服务器chrome headless执行
+
