@@ -27,6 +27,7 @@ Go语言实现，js注入
 "clientId":"fGpD6UCRFYoKD7BfRCNbq+n/+ltgdWGH9jlHMsaD72SnOJD7ZF5z3WfOk6xSrTww"
 }'
 ```
+ - Unity csharp客户端连接代码在 msg_csharp (基于besthttp)
 
 
 # How to run
