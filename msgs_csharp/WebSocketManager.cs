@@ -7,9 +7,20 @@ using System;
 using System.Reflection;
 using UnityEngine;
 [System.Serializable]
-public class WSMsg
+public class ClientID
+{
+    public string clientId;
+}
+
+[System.Serializable]
+public class CommonMsg
 {
     public string msg; 
+}
+[System.Serializable]
+public class ConnectedMsg
+{ 
+    public ClientID data;
 }
 public class WebSocketManager : MonoBehaviour
 {
@@ -18,7 +29,7 @@ public class WebSocketManager : MonoBehaviour
     /// <summary>
     /// The WebSocket address to connect
     /// </summary> 
-    //string address = "ws://121.40.165.18:8800";
+    string address = "ws://127.0.0.1:9494/ws?systemId=tiktok";
 
     /// <summary>
     /// Default text to send
@@ -36,21 +47,15 @@ public class WebSocketManager : MonoBehaviour
     /// </summary>
     Vector2 scrollPos;
 
-    private MethodInfo fromJsonMethodInfo;
 
     #endregion
 
     #region Unity Events
     private void Start()
     {
-        fromJsonMethodInfo = typeof(JsonUtility).GetMethod("FromJson",
-        BindingFlags.Public | BindingFlags.Static,
-        null,
-        CallingConventions.Any,
-        new Type[] { typeof(string) },
-        null);
+ 
 
-        webSocket = new WebSocket(new Uri(Constants.WSAddress));
+        webSocket = new WebSocket(new Uri(address));
 #if !UNITY_WEBGL
         //   webSocket.StartPingThread = true;
 
@@ -97,6 +102,14 @@ public class WebSocketManager : MonoBehaviour
     void OnMessageReceived(WebSocket ws, string message)
     {
         Debug.Log(message);
+        var commonMsg = JsonUtility.FromJson<CommonMsg>(message);
+        if (commonMsg != null) {
+            if (commonMsg.msg == "Connected") {
+                var connectedMsg = JsonUtility.FromJson<ConnectedMsg>(message);
+                Debug.Log(connectedMsg.data.clientId);
+            }
+            return;
+        }
         var wsMsg = JsonUtility.FromJson<Msgs.WebcastBaseMessage>(message);
         if (wsMsg.common.Method == "WebcastChatMessage")
         {
