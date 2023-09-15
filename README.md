@@ -27,7 +27,7 @@ Go语言实现，js注入
 "clientId":"fGpD6UCRFYoKD7BfRCNbq+n/+ltgdWGH9jlHMsaD72SnOJD7ZF5z3WfOk6xSrTww"
 }'
 ```
- - Unity csharp客户端连接代码在 msg_csharp (基于besthttp)
+ - Unity csharp客户端连接代码在 msgs_csharp (基于besthttp) ，ws连上后用api.bind_to_group绑定客户端到对应房间
 
 
 # How to run
