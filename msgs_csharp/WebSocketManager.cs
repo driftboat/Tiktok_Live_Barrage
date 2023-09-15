@@ -111,6 +111,10 @@ public class WebSocketManager : MonoBehaviour
             return;
         }
         var wsMsg = JsonUtility.FromJson<Msgs.WebcastBaseMessage>(message);
+        if (wsMsg == null)
+        {
+            return;
+        }
         if (wsMsg.common.Method == "WebcastChatMessage")
         {
              var chatMsg = (JsonUtility.FromJson<Msgs.WebcastChatMessage>(message));
