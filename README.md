@@ -30,6 +30,11 @@ Go语言实现，js注入
 }'
 ```
  - Unity csharp客户端连接代码在 msgs_csharp (基于besthttp) ，ws连上后用api.bind_to_group绑定ws连接获得的clientId到对应房间
+## 抓取方案应用简述
+- 启动抓取后，客户端用websocket连接 ws://127.0.0.1:9494/ws?systemId=tiktok
+- 从返回数据中获取客户端clientId
+- 绑定clientId到抓取房间id
+- 接收并处理弹幕数据
 # Server
  服务器端(单台服务器24小时压测支持1000主播，1000 qps) Window测试版： https://github.com/driftboat/TiktokBarrage/releases/download/1.0.0/BarrageServer.zip  
  - 运行需要redis， 修改conf/app.ini下的redis配置 如果redis6.0(ACL)， 开启username设置用户名  
