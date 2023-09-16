@@ -1,7 +1,7 @@
 # tkbarrage
-Tiktok弹幕抓取 发送websocket服务器   （之前发布的Barrage.exe存在Bug无法连接自己设置的ws url，请重新下载  ）  
+Tiktok弹幕抓取 发送websocket服务器  
 Receive live stream events such as comments and gifts and send to your websocket server tool in Go language.  free for one month   
-免费试用一个月 下载客户端  https://github.com/driftboat/TiktokBarrage/releases/download/1.0.0/Barrage.zip  
+免费试用一个月 
 请联系 qq: 174389107  telegram：db_444444  
 Go语言实现，js注入  
   
