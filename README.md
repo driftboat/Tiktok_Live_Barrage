@@ -8,7 +8,7 @@ Go语言实现，js注入
 ![avatar](images/tk1.png)
 
 
-# How to run
+# 抓取流程说明
 ## 抓取服务启动
 - [Download https://github.com/driftboat/TiktokBarrage/releases/download/2.0/Barrage.zip  ](https://github.com/driftboat/TiktokBarrage/releases/download/2.0/Barrage_2.0.zip)
 - 解压运行 Barrage_2.0.exe
