@@ -6,6 +6,7 @@ using BestHTTP.WebSocket;
 using System;
 using System.Reflection;
 using UnityEngine;
+using Msgs;
 [System.Serializable]
 public class ClientID
 {
@@ -21,6 +22,22 @@ public class CommonMsg
 public class ConnectedMsg
 { 
     public ClientID data;
+}
+
+[System.Serializable]
+public class ChatMsg
+{
+    public Msgs.WebcastChatMessage data;
+}
+[System.Serializable]
+public class GiftMsg
+{
+    public Msgs.WebcastGiftMessage data;
+}
+[System.Serializable]
+public class LikeMsg
+{
+    public Msgs.WebcastLikeMessage data;
 }
 public class WebSocketManager : MonoBehaviour
 {
@@ -108,24 +125,24 @@ public class WebSocketManager : MonoBehaviour
                 var connectedMsg = JsonUtility.FromJson<ConnectedMsg>(message);
                 Debug.Log(connectedMsg.data.clientId);
             }
+            if (commonMsg.msg == "Chat")
+            {
+                var chatMsg = JsonUtility.FromJson<ChatMsg>(message);
+                Debug.Log(chatMsg.data.Common.Method);
+            }
+            if (commonMsg.msg == "Gift")
+            {
+                var giftMsg = JsonUtility.FromJson<GiftMsg>(message);
+                Debug.Log(giftMsg.data.Common.Method);
+            }
+            if (commonMsg.msg == "Like")
+            {
+                var likeMsg = JsonUtility.FromJson<LikeMsg>(message);
+                Debug.Log(likeMsg.data.Common.Method);
+            }
             return;
         }
-        var wsMsg = JsonUtility.FromJson<Msgs.WebcastBaseMessage>(message);
-        if (wsMsg == null)
-        {
-            return;
-        }
-        if (wsMsg.common.Method == "WebcastChatMessage")
-        {
-             var chatMsg = (JsonUtility.FromJson<Msgs.WebcastChatMessage>(message));
-        }
-        else if (wsMsg.common.Method == "WebcastGiftMessage")
-        {
-            var giftMsg = (JsonUtility.FromJson<Msgs.WebcastGiftMessage>(message));
-        }
-        else if (wsMsg.common.Method == "WebcastLikeMessage") {
-            var likeMsg = (JsonUtility.FromJson<Msgs.WebcastLikeMessage>(message));
-        }
+        
           
     }
 
