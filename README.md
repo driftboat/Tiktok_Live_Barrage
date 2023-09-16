@@ -17,7 +17,7 @@ Go语言实现，js注入
 ## 客户端接收弹幕消息模拟
 - 开启模拟ws客户端 用这个在线ws测试网站，连接 ws://127.0.0.1:9494/ws?systemId=tiktok ，也可以用其他ws测试网站 http://www.jsons.cn/websocket/  
 ![image](https://github.com/driftboat/TiktokBarrage/assets/247809/22a97a4f-3222-4d1c-ad4d-8981751f32ef)
- - Unity csharp客户端连接代码在 msgs_csharp (基于besthttp) ，ws连上后用api.bind_to_group绑定ws连接获得的clientId到对应房间
+ - Unity csharp客户端连接代码在 msgs_csharp (基于besthttp) 
 ## 抓取方案应用简述
 - 启动抓取后，客户端用websocket连接 ws://127.0.0.1:9494/ws?systemId=tiktok
 - 接收并处理弹幕数据
