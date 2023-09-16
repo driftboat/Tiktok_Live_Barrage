@@ -15,25 +15,11 @@ Go语言实现，js注入
 - 关闭所有Chrome浏览器
 - 点Start运行
 ## 客户端接收弹幕消息模拟
-- 从log/info获取房间id（如：（{"data":7275920301647465259,"level":"info","msg":"tiktok_chat","time":"2023-09-07 14:29:33"}）（实际使用中由主播在真实客户端填入,data为房间id）
 - 开启模拟ws客户端 用这个在线ws测试网站，连接 ws://127.0.0.1:9494/ws?systemId=tiktok ，也可以用其他ws测试网站 http://www.jsons.cn/websocket/  
 ![image](https://github.com/driftboat/TiktokBarrage/assets/247809/22a97a4f-3222-4d1c-ad4d-8981751f32ef)
- - 绑定模拟客户端到对应房间，修改clientId为前面ws模拟客户端返回的clientid，groupName为服务器log获取的房间id
-  ```
-   curl --location 'http://127.0.0.1:9494/api/bind_to_group' \
---header 'systemId: tiktok' \
---header 'Content-Type: application/json' \
---data '{
-"sendUserId":"123",
-"groupName":"7275920301647465259",	
-"clientId":"fGpD6UCRFYoKD7BfRCNbq+n/+ltgdWGH9jlHMsaD72SnOJD7ZF5z3WfOk6xSrTww"
-}'
-```
  - Unity csharp客户端连接代码在 msgs_csharp (基于besthttp) ，ws连上后用api.bind_to_group绑定ws连接获得的clientId到对应房间
 ## 抓取方案应用简述
 - 启动抓取后，客户端用websocket连接 ws://127.0.0.1:9494/ws?systemId=tiktok
-- 从返回数据中获取客户端clientId
-- 绑定clientId到抓取房间id
 - 接收并处理弹幕数据
 # Server
  服务器端(单台服务器24小时压测支持1000主播，1000 qps) Window测试版： https://github.com/driftboat/TiktokBarrage/releases/download/1.0.0/BarrageServer.zip  
