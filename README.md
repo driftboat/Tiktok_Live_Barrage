@@ -11,7 +11,7 @@ Go语言实现，js注入
 # 抓取流程说明
 ## 抓取服务启动
 - [下载安装包](https://github.com/driftboat/TiktokBarrage/releases/download/2.1/Barrage_2.1.zip)
-- 解压运行 Barrage_2.0.exe
+- 解压运行 Barrage.exe
 - 关闭所有Chrome浏览器(可以不关闭，但必须在窗口中设置一个单独的Chrome用户目录，专门给Barrage使用）  
 - 点Start运行
 ## 客户端接收弹幕消息模拟
