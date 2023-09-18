@@ -4,6 +4,7 @@ namespace Msgs
 {
     public class WebcastLikeMessage
     {
+        public string Streamer { get; set; }
         public Common Common { get; set; }
         public User User { get; set; }
         public string Icon { get; set; }

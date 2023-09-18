@@ -4,6 +4,7 @@ namespace Msgs
 {
     public class WebcastGiftMessage
     {
+        public string Streamer { get; set; }
         public bool DisableGiftTracking { get; set; }
         public string GiftId { get; set; }
         public string RepeatCount { get; set; }

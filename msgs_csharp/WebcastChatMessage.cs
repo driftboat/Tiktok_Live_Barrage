@@ -4,6 +4,7 @@ namespace Msgs
 {
     public class WebcastChatMessage
     {
+        public string Streamer { get; set; }
         public string Content { get; set; }
         public string ContentLanguage { get; set; }
         public string FullScreenTextColor { get; set; }

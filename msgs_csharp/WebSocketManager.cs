@@ -39,6 +39,11 @@ public class LikeMsg
 {
     public Msgs.WebcastLikeMessage data;
 }
+[System.Serializable]
+public class MemberMsg
+{
+    public Msgs.WebcastMemberMessage data;
+}
 public class WebSocketManager : MonoBehaviour
 {
     #region Private Fields
@@ -139,6 +144,10 @@ public class WebSocketManager : MonoBehaviour
             {
                 var likeMsg = JsonUtility.FromJson<LikeMsg>(message);
                 Debug.Log(likeMsg.data.Common.Method);
+            }
+            if (commonMsg.msg == "Member") {
+                var memberMsg = JsonUtility.FromJson<MemberMsg>(message);
+                Debug.Log(memberMsg.data.Common.Method);
             }
             return;
         }
