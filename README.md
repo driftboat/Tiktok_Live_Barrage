@@ -1,6 +1,6 @@
 # tkbarrage
 Tiktok弹幕抓取 发送websocket服务器  
-Receive live stream events such as comments and gifts and send to your websocket server tool in Go language.  free for one month   
+Receive live stream events such as comments and gifts and send to your websocket server tool in Go language.   
 请联系 qq: 174389107  telegram：db_444444  
 Go语言实现，js注入  
   
