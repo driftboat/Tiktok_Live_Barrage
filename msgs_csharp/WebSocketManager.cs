@@ -115,7 +115,6 @@ public class WebSocketManager : MonoBehaviour
     /// </summary>
     void OnOpen(WebSocket ws)
     {
-        SignalBus.GlobalSignal.Dispatch(SignalDefine.onWebSocketOpened);
     }
 
     /// <summary>
