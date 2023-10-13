@@ -132,21 +132,21 @@ public class WebSocketManager : MonoBehaviour
             if (commonMsg.msg == "Chat")
             {
                 var chatMsg = JsonUtility.FromJson<ChatMsg>(message);
-                Debug.Log(chatMsg.data.Common.Method);
+                Debug.Log(chatMsg.data.common.method);
             }
             if (commonMsg.msg == "Gift")
             {
                 var giftMsg = JsonUtility.FromJson<GiftMsg>(message);
-                Debug.Log(giftMsg.data.Common.Method);
+                Debug.Log(giftMsg.data.common.method);
             }
             if (commonMsg.msg == "Like")
             {
                 var likeMsg = JsonUtility.FromJson<LikeMsg>(message);
-                Debug.Log(likeMsg.data.Common.Method);
+                Debug.Log(likeMsg.data.common.method);
             }
             if (commonMsg.msg == "Member") {
                 var memberMsg = JsonUtility.FromJson<MemberMsg>(message);
-                Debug.Log(memberMsg.data.Common.Method);
+                Debug.Log(memberMsg.data.common.method);
             }
             return;
         }

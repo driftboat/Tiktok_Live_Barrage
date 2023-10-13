@@ -1,14 +1,12 @@
+using System;
 using System.Collections.Generic;
 
 namespace Msgs
 {
+    [Serializable]
     public class WebcastBaseMessage
     {
-        public Common Common { get; set; } 
+        public Common common;
     }
-     
-    public class Common
-    {
-        public string Method { get; set; }
-    }
+ 
 }

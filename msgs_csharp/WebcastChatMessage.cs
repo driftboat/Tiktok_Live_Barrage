@@ -1,162 +1,164 @@
+using System;
 using System.Collections.Generic;
 
 namespace Msgs
 {
+    [Serializable]
     public class WebcastChatMessage
     {
-        public string Streamer { get; set; }
-        public string Content { get; set; }
-        public string ContentLanguage { get; set; }
-        public string FullScreenTextColor { get; set; }
-        public double InputType { get; set; }
-        public double QuickChatScene { get; set; }
-        public double CommunityFlaggedStatus { get; set; }
-        public UserIdentity UserIdentity { get; set; }
-        public Common Common { get; set; }
-        public User User { get; set; }
-        public bool VisibleToSender { get; set; }
-        public List<CommentQualityScores> CommentQualityScoresList { get; set; }
+        public string streamer;
+        public string content;
+        public string contentLanguage;
+        public string fullScreenTextColor;
+        public double inputType;
+        public double quickChatScene;
+        public double communityFlaggedStatus;
+        public UserIdentity userIdentity;
+        public Common common;
+        public User user;
+        public bool visibleToSender;
+        public List<CommentQualityScores> commentQualityScoresList;
     }
-
+    [Serializable]
     public class UserIdentity
     {
-        public bool IsModeratorOfAnchor { get; set; }
-        public bool IsAnchor { get; set; }
-        public bool IsGiftGiverOfAnchor { get; set; }
-        public bool IsSubscriberOfAnchor { get; set; }
-        public bool IsMutualFollowingWithAnchor { get; set; }
-        public bool IsFollowerOfAnchor { get; set; }
+        public bool isModeratorOfAnchor;
+        public bool isAnchor;
+        public bool isGiftGiverOfAnchor;
+        public bool isSubscriberOfAnchor;
+        public bool isMutualFollowingWithAnchor;
+        public bool isFollowerOfAnchor;
     }
-
+    [Serializable]
     public class Common
     {
-        public string MsgProcessFilterV { get; set; }
-        public string AnchorFoldTypeForWeb { get; set; }
-        public string RoomId { get; set; }
-        public bool IsShowMsg { get; set; }
-        public string Describe { get; set; }
-        public string FoldType { get; set; }
-        public string AnchorFoldType { get; set; }
-        public string PriorityScore { get; set; }
-        public string ToIdc { get; set; }
-        public string ClientSendTime { get; set; }
-        public string Method { get; set; }
-        public double Monitor { get; set; }
-        public string AnchorPriorityScore { get; set; }
-        public string FoldTypeForWeb { get; set; }
-        public double DispatchStrategy { get; set; }
-        public string CreateTime { get; set; }
-        public string MsgProcessFilterK { get; set; }
-        public string FromIdc { get; set; }
-        public string RoomMessageHeatLevel { get; set; }
-        public string MsgId { get; set; }
-        public string LogId { get; set; }
+        public string msgProcessFilterV;
+        public string anchorFoldTypeForWeb;
+        public string roomId;
+        public bool isShowMsg;
+        public string describe;
+        public string foldType;
+        public string anchorFoldType;
+        public string priorityScore;
+        public string toIdc;
+        public string clientSendTime;
+        public string method;
+        public double monitor;
+        public string anchorPriorityScore;
+        public string foldTypeForWeb;
+        public double dispatchStrategy;
+        public string createTime;
+        public string msgProcessFilterK;
+        public string fromIdc;
+        public string roomMessageHeatLevel;
+        public string msgId;
+        public string logId;
     }
-
+    [Serializable]
     public class User
     {
-        public string VerifiedReason { get; set; }
-        public double Status { get; set; }
-        public string ModifyTime { get; set; }
-        public string Deprecated21 { get; set; }
-        public bool AllowShowInGossip { get; set; }
-        public string EnableIchatImg { get; set; }
-        public string Deprecated29 { get; set; }
-        public bool Deprecated17 { get; set; }
-        public string Nickname { get; set; }
-        public double Deprecated8 { get; set; }
-        public string TicketCount { get; set; }
-        public bool AllowFindByContacts { get; set; }
-        public UserAttr UserAttr { get; set; }
-        public bool AllowUseLinkmic { get; set; }
-        public bool WithCarManagementPermission { get; set; }
-        public AvatarThumb AvatarThumb { get; set; }
-        public bool Verified { get; set; }
-        public string CreateTime { get; set; }
-        public double UserRole { get; set; }
-        public double CommentRestrict { get; set; }
-        public double IchatRestrictType { get; set; }
-        public string ScmLabel { get; set; }
-        public string ShareQrcodeUri { get; set; }
-        public bool AllowStrangeComment { get; set; }
-        public string Deprecated18 { get; set; }
-        public double Exp { get; set; }
-        public bool PushVideoPost { get; set; }
-        public double Deprecated3 { get; set; }
-        public string Deprecated5 { get; set; }
-        public double LinkMicStats { get; set; }
-        public bool IsFollowing { get; set; }
-        public bool NeedProfileGuide { get; set; }
-        public bool PushStatus { get; set; }
-        public string DisplayId { get; set; }
-        public bool WithFusionShopEntry { get; set; }
-        public bool Deprecated19 { get; set; }
-        public bool AllowUnfollowerComment { get; set; }
-        public string Deprecated7 { get; set; }
-        public double Secret { get; set; }
-        public string TopVipNo { get; set; }
-        public string PayScore { get; set; }
-        public string VerifiedContent { get; set; }
-        public bool AllowOthersDownloadWhenSharingVideo { get; set; }
-        public string BgImgUrl { get; set; }
-        public bool FoldStrangerChat { get; set; }
-        public bool Deprecated28 { get; set; }
-        public bool IsFollower { get; set; }
-        public string Id { get; set; }
-        public bool WithCommercePermission { get; set; }
-        public bool Deprecated16 { get; set; }
-        public string FanTicketCount { get; set; }
-        public string FollowStatus { get; set; }
-        public string PayScores { get; set; }
-        public double Deprecated2 { get; set; }
-        public bool IsBlock { get; set; }
-        public double Deprecated12 { get; set; }
-        public bool AllowShowMyAction { get; set; }
-        public string IdStr { get; set; }
-        public bool PushFollow { get; set; }
-        public string Constellation { get; set; }
-        public double DisableIchat { get; set; }
-        public bool PushDigg { get; set; }
-        public string BioDescription { get; set; }
-        public string Deprecated4 { get; set; }
-        public string SecUid { get; set; }
-        public double Deprecated15 { get; set; }
-        public bool AllowOthersDownloadVideo { get; set; }
-        public double BlockStatus { get; set; }
-        public bool PushCommentStatus { get; set; }
-        public bool PushFriendAction { get; set; }
-        public bool PushVideoRecommend { get; set; }
-        public string Deprecated1 { get; set; }
-        public double Deprecated6 { get; set; }
-        public string SpecialId { get; set; }
-        public double Deprecated13 { get; set; }
-        public bool AllowShareShowProfile { get; set; }
-        public bool PushIchat { get; set; }
+        public string verifiedReason;
+        public double status;
+        public string modifyTime;
+        public string deprecated21;
+        public bool allowShowInGossip;
+        public string enableIchatImg;
+        public string deprecated29;
+        public bool deprecated17;
+        public string nickname;
+        public double deprecated8;
+        public string ticketCount;
+        public bool allowFindByContacts;
+        public UserAttr userAttr;
+        public bool allowUseLinkmic;
+        public bool withCarManagementPermission;
+        public AvatarThumb avatarThumb;
+        public bool verified;
+        public string createTime;
+        public double userRole;
+        public double commentRestrict;
+        public double ichatRestrictType;
+        public string scmLabel;
+        public string shareQrcodeUri;
+        public bool allowStrangeComment;
+        public string deprecated18;
+        public double exp;
+        public bool pushVideoPost;
+        public double deprecated3;
+        public string deprecated5;
+        public double linkMicStats;
+        public bool isFollowing;
+        public bool needProfileGuide;
+        public bool pushStatus;
+        public string displayId;
+        public bool withFusionShopEntry;
+        public bool deprecated19;
+        public bool allowUnfollowerComment;
+        public string deprecated7;
+        public double secret;
+        public string topVipNo;
+        public string payScore;
+        public string verifiedContent;
+        public bool allowOthersDownloadWhenSharingVideo;
+        public string bgImgUrl;
+        public bool foldStrangerChat;
+        public bool deprecated28;
+        public bool isFollower;
+        public string id;
+        public bool withCommercePermission;
+        public bool deprecated16;
+        public string fanTicketCount;
+        public string followStatus;
+        public string payScores;
+        public double deprecated2;
+        public bool isBlock;
+        public double deprecated12;
+        public bool allowShowMyAction;
+        public string idStr;
+        public bool pushFollow;
+        public string constellation;
+        public double disableIchat;
+        public bool pushDigg;
+        public string bioDescription;
+        public string deprecated4;
+        public string secUid;
+        public double deprecated15;
+        public bool allowOthersDownloadVideo;
+        public double blockStatus;
+        public bool pushCommentStatus;
+        public bool pushFriendAction;
+        public bool pushVideoRecommend;
+        public string deprecated1;
+        public double deprecated6;
+        public string specialId;
+        public double deprecated13;
+        public bool allowShareShowProfile;
+        public bool pushIchat;
     }
-
+    [Serializable]
     public class UserAttr
     {
-        public bool IsMuted { get; set; }
-        public bool IsAdmin { get; set; }
-        public bool IsSuperAdmin { get; set; }
-        public string MuteDuration { get; set; }
+        public bool isMuted;
+        public bool isAdmin;
+        public bool isSuperAdmin;
+        public string muteDuration;
     }
-
+    [Serializable]
     public class AvatarThumb
     {
-        public string AvgColor { get; set; }
-        public double ImageType { get; set; }
-        public string OpenWebUrl { get; set; }
-        public bool IsAnimated { get; set; }
-        public List<string> UrlListList { get; set; }
-        public string Uri { get; set; }
-        public string Height { get; set; }
-        public string Width { get; set; }
+        public string avgColor;
+        public double imageType;
+        public string openWebUrl;
+        public bool isAnimated;
+        public List<string> urlListList;
+        public string uri;
+        public string height;
+        public string width;
     }
-
+    [Serializable]
     public class CommentQualityScores
     {
-        public string Version { get; set; }
-        public string Score { get; set; }
+        public string version;
+        public string score;
     }
 }
