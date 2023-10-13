@@ -20,6 +20,12 @@ Go语言实现，js注入
 ## 抓取方案应用简述
 - 启动抓取后，客户端用websocket连接 ws://127.0.0.1:9494/ws?systemId=tiktok
 - 接收并处理弹幕数据
+## Barrage功能说明
+- Barrage启动ws服务，打开chrome  
+- Barrage注入js，将消息发送到设置的ws服务地址
+- 任意连接到Barrage的ws客户端，都会收到转发的消息
+- 如果要发送到自己的ws服务器，可以关闭“开启本机ws服务”  ，填入自己的ws服务器地址  
+ 
 # Server
  服务器端(单台服务器24小时压测支持1000主播，1000 qps) Window测试版： https://github.com/driftboat/TiktokBarrage/releases/download/1.0.0/BarrageServer.zip  
  - 运行需要redis， 修改conf/app.ini下的redis配置 如果redis6.0(ACL)， 开启username设置用户名  
