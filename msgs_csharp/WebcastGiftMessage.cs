@@ -18,6 +18,8 @@ namespace Msgs
         public string monitorExtra;
         public string orderId;
         public Common common;
+        public MonitorInfo monitorInfo;
+
     }
     [Serializable]
     public class Gift
@@ -40,6 +42,21 @@ namespace Msgs
         public bool isBroadcastGift;
         public bool isEffectBefview;
         public bool canPutInGiftBox;
+    }
+    [Serializable]
+    public class MonitorInfo
+    { 
+        public string anchorId;
+        public string sendGiftProfitApiStartMs;
+        public string fromVersion;
+        public string fromPlatform;
+        public string profitapiMessageDur;
+        public string sendGiftProfitCoreStartMs;
+        public string sendGiftReqStartMs;
+        public string sendGiftSendMessageSuccessMs;
+        public string sendProfitapiDur;
+        public string toUserId;
+        public string sendGiftStartClientLocalMs;
     }
 
 }
