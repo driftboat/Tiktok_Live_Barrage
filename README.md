@@ -11,7 +11,7 @@ Go语言实现，js注入
 - [下载安装包](https://github.com/driftboat/TiktokBarrage/releases/latest)
 - 解压运行 Barrage.exe
 - 关闭所有Chrome浏览器(可以不关闭，但必须在窗口中设置一个单独的Chrome用户目录，专门给Barrage使用）  
-- 点Start运行
+- 输入正确的key，点Start运行
 ## 客户端接收弹幕消息模拟
 - 开启模拟ws客户端 用这个在线ws测试网站，连接 ws://127.0.0.1:9494/ws?systemId=tiktok ，也可以用其他ws测试网站 http://www.jsons.cn/websocket/  
 ![image](https://github.com/driftboat/TiktokBarrage/assets/247809/22a97a4f-3222-4d1c-ad4d-8981751f32ef)
