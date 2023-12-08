@@ -7,6 +7,8 @@ using System;
 using System.Reflection;
 using UnityEngine;
 using Msgs;
+using System.IO;
+
 [System.Serializable]
 public class ClientID
 {
@@ -44,6 +46,12 @@ public class MemberMsg
 {
     public Msgs.WebcastMemberMessage data;
 }
+
+[System.Serializable]
+public class SocialMsg
+{
+    public Msgs.WebcastSocialMessage data;
+}
 public class WebSocketManager : MonoBehaviour
 {
     #region Private Fields
@@ -75,8 +83,13 @@ public class WebSocketManager : MonoBehaviour
     #region Unity Events
     private void Start()
     {
- 
-
+        //string path = "Assets/test.txt";
+        ////Read the text from directly from the test.txt file
+        //StreamReader reader = new StreamReader(path);
+        //var text = reader.ReadToEnd();
+        //var giftMsg = JsonUtility.FromJson<Msgs.WebcastGiftMessage>(text);
+        //Debug.Log(giftMsg.common.method);
+        //reader.Close();
         webSocket = new WebSocket(new Uri(address));
 #if !UNITY_WEBGL
         //   webSocket.StartPingThread = true;
@@ -129,24 +142,28 @@ public class WebSocketManager : MonoBehaviour
                 var connectedMsg = JsonUtility.FromJson<ConnectedMsg>(message);
                 Debug.Log(connectedMsg.data.clientId);
             }
-            if (commonMsg.msg == "Chat")
+            else if (commonMsg.msg == "Chat")
             {
                 var chatMsg = JsonUtility.FromJson<ChatMsg>(message);
                 Debug.Log(chatMsg.data.common.method);
             }
-            if (commonMsg.msg == "Gift")
+            else if (commonMsg.msg == "Gift")
             {
                 var giftMsg = JsonUtility.FromJson<GiftMsg>(message);
                 Debug.Log(giftMsg.data.common.method);
             }
-            if (commonMsg.msg == "Like")
+            else if (commonMsg.msg == "Like")
             {
                 var likeMsg = JsonUtility.FromJson<LikeMsg>(message);
                 Debug.Log(likeMsg.data.common.method);
             }
-            if (commonMsg.msg == "Member") {
+            else if (commonMsg.msg == "Member") {
                 var memberMsg = JsonUtility.FromJson<MemberMsg>(message);
                 Debug.Log(memberMsg.data.common.method);
+            }
+            else if (commonMsg.msg == "Social"){
+                var socialMsg = JsonUtility.FromJson<SocialMsg>(message);
+                Debug.Log(socialMsg.data.common.method);
             }
             return;
         }
