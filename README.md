@@ -109,6 +109,7 @@ func (c *Client) Read() {
 
 
 # Live message data structures
+消息json格式为：msg 消息标识（Chat，Gift，Like，Member....） data 为具体数据如下  
 All data structures are in the msgs directory
 ![avatar](images/tk2.png)
 
