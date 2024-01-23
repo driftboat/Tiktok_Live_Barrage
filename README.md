@@ -29,10 +29,7 @@ Go语言实现，js注入
 - 任意连接到Barrage的ws客户端，都会收到转发的消息
 - 如果要发送到自己的ws服务器，可以关闭“开启本机ws服务”  ，填入自己的ws服务器地址  
  
-# Server
- 服务器端(单台服务器24小时压测支持1000主播，1000 qps) Window测试版： https://github.com/driftboat/TiktokBarrage/releases/download/1.0.0/BarrageServer.zip  
- - 运行需要redis， 修改conf/app.ini下的redis配置 如果redis6.0(ACL)， 开启username设置用户名  
- - 周排行榜支持，至多2个排行榜
+
 
 # Create your websocket server
 Write a go server to receive and parse data like this
