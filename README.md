@@ -1,5 +1,5 @@
 # tkbarrage
-Tiktok弹幕抓取 发送websocket服务器  不再公开key, 需要试用的请联系 qq: 174389107  
+Tiktok弹幕抓取 发送websocket服务器 , 需要试用的请联系 qq: 174389107  
 Receive live stream events such as comments and gifts and send to your websocket server tool in Go language.   
 Go语言实现，js注入  
   
