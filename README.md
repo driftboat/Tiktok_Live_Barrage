@@ -1,4 +1,5 @@
 # tkbarrage
+2024 年全年可用，无需key  
 Tiktok弹幕抓取 发送websocket服务器 , 需要试用的请联系 qq: 174389107  
 Receive live stream events such as comments and gifts and send to your websocket server tool in Go language.   
 Go语言实现，js注入  
