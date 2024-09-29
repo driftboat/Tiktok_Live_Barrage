@@ -1,6 +1,6 @@
 # tkbarrage
 2024 年全年可用，无需key  
-Tiktok弹幕抓取 发送websocket服务器 , 需要试用的请联系 qq: 174389107  
+Tiktok弹幕抓取 发送websocket服务器 
 Receive live stream events such as comments and gifts and send to your websocket server tool in Go language.   
 Go语言实现，js注入  
   
@@ -119,5 +119,6 @@ All data structures are in the msgs directory
 - 用获取fun值按钮，获取新的值，修改fun.txt中的值
 	- 点开后在chrome的开发者控制台，寻找以下值  
    	![image](https://github.com/user-attachments/assets/6bb52534-228f-488a-9c1e-5820a696f472)
+- 联系 qq: 174389107 或者提交issue  
 
    		 
