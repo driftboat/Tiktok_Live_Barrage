@@ -117,5 +117,7 @@ All data structures are in the msgs directory
 ## 无法抓取
 - 检查chrome版本，重置chrome设置到默认
 - 用获取fun值按钮，获取新的值，修改fun.txt中的值
-	- 点开后在chrome的开发者控制台，寻找以下值
+	- 点开后在chrome的开发者控制台，寻找以下值  
+   	![image](https://github.com/user-attachments/assets/6bb52534-228f-488a-9c1e-5820a696f472)
+
    		 
