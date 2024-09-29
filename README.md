@@ -112,5 +112,10 @@ msg_csharp里面部分字段不全，根据需要可自行填补
 All data structures are in the msgs directory
 ![avatar](images/tk2.png)
 
-# ToDo
+# 错误解决
 
+## 无法抓取
+- 检查chrome版本，重置chrome设置到默认
+- 用获取fun值按钮，获取新的值，修改fun.txt中的值
+	- 点开后在chrome的开发者控制台，寻找以下值
+   		 
