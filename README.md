@@ -19,9 +19,8 @@ Go语言实现，js注入模式和代理两种模式可选，都可以连接使�
    ![image](https://github.com/user-attachments/assets/7d6dcd17-6192-4c5a-a273-ee085129da2c)
 - chrome安装Proxy SwitchyOmega插件(从Chrome应用商店安装)，并设置代理  
   ![image](https://github.com/user-attachments/assets/1d30e201-ffdf-4a5c-a56f-240455e04a22)
-  ![image](https://github.com/user-attachments/assets/d77170d6-b15e-4974-b252-61784d9ace76)
-- 点开Proxy SwitchOmega插件，选择autoswitch情景  
-  ![image](https://github.com/user-attachments/assets/7f374c3f-f1a8-494d-a906-e30510e62057)
+- 点开Proxy SwitchOmega插件，选择proxy情景  
+  ![image](https://github.com/user-attachments/assets/81983325-fa64-41dd-9a40-ffb893796db0)
 - 点开始(代理模式)运行，如果你需要科学上网，需要输入代理地址，目前只支持socekt5或者http，例如 socket5://admin:123456@127.0.0.1:8888 或 http://admin:123456@127.0.0.1:8888
 ## 客户端接收弹幕消息模拟
 - 开启模拟ws客户端 用这个在线ws测试网站，连接 ws://127.0.0.1:9494/ws?systemId=tiktok ，也可以用其他ws测试网站 http://www.jsons.cn/websocket/  
