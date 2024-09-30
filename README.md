@@ -3,7 +3,7 @@
 Tiktok弹幕抓取 发送websocket服务器 
 Go语言实现，js注入模式和代理两种模式可选，都可以连接使用
   
-![avatar](images/tk1.png)
+![avatar](images/tk1.jpg)
 
 
 # 抓取流程说明
