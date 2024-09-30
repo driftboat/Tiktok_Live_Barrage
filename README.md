@@ -1,18 +1,28 @@
 # tkbarrage
 2024 年全年可用，无需key  
 Tiktok弹幕抓取 发送websocket服务器 
-Receive live stream events such as comments and gifts and send to your websocket server tool in Go language.   
-Go语言实现，js注入  
+Go语言实现，js注入模式和代理两种模式可选，都可以连接使用
   
 ![avatar](images/tk1.png)
 
 
 # 抓取流程说明
-## 抓取服务启动
+## 抓取服务启动（注入模式）
 - [下载安装包](https://github.com/driftboat/TiktokBarrage/releases/latest)
 - 解压运行 Barrage.exe
 - 关闭所有Chrome浏览器(可以不关闭，但必须在窗口中设置一个单独的Chrome用户目录，专门给Barrage使用）  
-- 输入正确的key，点Start运行
+- 输入正确的key，点开始(注入模式)运行
+## 抓取服务启动（代理模式）
+- [下载安装包](https://github.com/driftboat/TiktokBarrage/releases/latest)
+- 解压运行 Barrage.exe
+- 在chrome浏览器方式启动命令修改
+   ![image](https://github.com/user-attachments/assets/7d6dcd17-6192-4c5a-a273-ee085129da2c)
+- chrome安装Proxy SwitchyOmega插件(从Chrome应用商店安装)，并设置代理  
+  ![image](https://github.com/user-attachments/assets/1d30e201-ffdf-4a5c-a56f-240455e04a22)
+  ![image](https://github.com/user-attachments/assets/d77170d6-b15e-4974-b252-61784d9ace76)
+- 点开Proxy SwitchOmega插件，选择autoswitch情景  
+  ![image](https://github.com/user-attachments/assets/7f374c3f-f1a8-494d-a906-e30510e62057)
+- 点开始(代理模式)运行
 ## 客户端接收弹幕消息模拟
 - 开启模拟ws客户端 用这个在线ws测试网站，连接 ws://127.0.0.1:9494/ws?systemId=tiktok ，也可以用其他ws测试网站 http://www.jsons.cn/websocket/  
 ![image](https://github.com/driftboat/TiktokBarrage/assets/247809/22a97a4f-3222-4d1c-ad4d-8981751f32ef)
