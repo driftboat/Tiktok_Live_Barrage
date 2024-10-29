@@ -17,7 +17,7 @@ Go语言实现，js注入模式和代理两种模式可选，都可以连接使�
 - 解压运行 Barrage.exe
 - 在chrome浏览器方式启动命令修改，在结尾增加 --ignore-certificate-errors  
    ![image](https://github.com/user-attachments/assets/7d6dcd17-6192-4c5a-a273-ee085129da2c)
-- chrome安装Proxy SwitchyOmega插件(从Chrome应用商店安装)，并设置代理(注意这个代理是发给barrage开的7802端口的，必须设置为7802)
+- chrome安装Proxy SwitchyOmega插件(从Chrome应用商店安装)，并设置代理(注意这个代理是发给barrage开的7802端口的，必须按下面截图设置为7802)
   ![image](https://github.com/user-attachments/assets/1d30e201-ffdf-4a5c-a56f-240455e04a22)
 - 点开Proxy SwitchOmega插件，选择proxy情景  
   ![image](https://github.com/user-attachments/assets/81983325-fa64-41dd-9a40-ffb893796db0)
