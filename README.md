@@ -31,13 +31,19 @@ Go语言实现，js注入模式和代理两种模式可选，都可以连接使�
 ## 抓取方案应用简述
 - 启动抓取后，客户端用websocket连接 ws://127.0.0.1:9494/ws?systemId=tiktok
 - 接收并处理弹幕数据
-## Barrage功能说明
+## Barrage功能说明(注入模式)
 - Barrage启动ws服务，打开chrome  
 - Barrage注入js，将消息发送到设置的ws服务地址
 - 任意连接到Barrage的ws客户端，都会收到转发的消息
 - 如果要发送到自己的ws服务器，可以关闭“开启本机ws服务”  ，填入自己的ws服务器地址  
  
-
+## Barrage功能说明(代理模式)
+- Barrage启动ws服务，开启7802端口  
+- 浏览器用Proxy SwitchyOmega等插件，将对应的网络请求转发到barrage的7802端口 
+- barrage将对应的网络请求通过配置的科学上网代理转发出去(不需要科学上网忽略) 
+- 任意连接到Barrage的ws客户端，都会收到转发的消息
+- 如果要发送到自己的ws服务器，可以关闭“开启本机ws服务”  ，填入自己的ws服务器地址  
+ 
 
 # Create your websocket server
 Write a go server to receive and parse data like this
