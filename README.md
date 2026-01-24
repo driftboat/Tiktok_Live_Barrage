@@ -21,7 +21,7 @@ js注入模式需要chrome并特定配置
    ![image](https://github.com/user-attachments/assets/7d6dcd17-6192-4c5a-a273-ee085129da2c)
 - chrome安装Proxy SwitchyOmega插件(从Chrome应用商店安装)，并设置代理(注意这个代理是发给barrage开的7802端口的，必须按下面截图设置为7802)
   ![image](https://github.com/user-attachments/assets/1d30e201-ffdf-4a5c-a56f-240455e04a22)
-- 点开Proxy SwitchOmega插件，选择proxy情景  
+- 点开Proxy SwitchOmega插件，选择proxy情景，出现无法访问网站属于正常现象  
   ![image](https://github.com/user-attachments/assets/81983325-fa64-41dd-9a40-ffb893796db0)
 - 点开始(代理模式)运行，如果你需要科学上网，需要输入代理地址，目前只支持socekt5或者http，例如 socket5://admin:123456@127.0.0.1:8888 或 http://admin:123456@127.0.0.1:8888  
   如果如下 输入代理地址就填 http://127.0.0.1:7890   
