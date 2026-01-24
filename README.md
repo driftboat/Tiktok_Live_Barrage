@@ -23,7 +23,7 @@ js注入模式需要chrome并特定配置
   ![image](https://github.com/user-attachments/assets/1d30e201-ffdf-4a5c-a56f-240455e04a22)
 - 点开Proxy SwitchOmega插件，选择proxy情景  
   ![image](https://github.com/user-attachments/assets/81983325-fa64-41dd-9a40-ffb893796db0)
-- 点开始(代理模式)运行，如果你需要科学上网，需要输入代理地址，目前只支持socekt5或者http，例如 socket5://admin:123456@127.0.0.1:8888 或 http://admin:123456@127.0.0.1:8888
+- 点开始(代理模式)运行，如果你需要科学上网，需要输入代理地址，目前只支持socekt5或者http，例如 socket5://admin:123456@127.0.0.1:8888 或 http://admin:123456@127.0.0.1:8888  
   如果如下 输入代理地址就填 http://127.0.0.1:7890   
   ![avatar](images/dl.jpg)
 ## 客户端接收弹幕消息模拟
