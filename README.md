@@ -24,6 +24,8 @@ js注入模式需要chrome并特定配置
 - 点开Proxy SwitchOmega插件，选择proxy情景  
   ![image](https://github.com/user-attachments/assets/81983325-fa64-41dd-9a40-ffb893796db0)
 - 点开始(代理模式)运行，如果你需要科学上网，需要输入代理地址，目前只支持socekt5或者http，例如 socket5://admin:123456@127.0.0.1:8888 或 http://admin:123456@127.0.0.1:8888
+  如果如下 输入代理地址就填 http://127.0.0.1:7890   
+  ![avatar](images/dl.jpg)
 ## 客户端接收弹幕消息模拟
 - 开启模拟ws客户端 用这个在线ws测试网站，连接 ws://127.0.0.1:9494/ws?systemId=tiktok ，也可以用其他ws测试网站 http://www.websocket-test.com/ http://www.jsons.cn/websocket/  
 ![image](https://github.com/driftboat/TiktokBarrage/assets/247809/22a97a4f-3222-4d1c-ad4d-8981751f32ef)
