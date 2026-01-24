@@ -1,5 +1,5 @@
 # tkbarrage
-无需key 目前只支持代理模式 
+无需key 目前只支持代理模式   
 Tiktok弹幕抓取 发送websocket服务器 
 Go语言实现，js注入模式和代理两种模式可选，都可以连接使用
   
