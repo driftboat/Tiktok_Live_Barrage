@@ -1,6 +1,6 @@
 # tkbarrage
 无需key 目前只支持代理模式 
-Tiktok弹幕抓取 发送websocket服务器 
+Tiktok弹幕抓取 发送websocket服务器   
 Go语言实现  
 js注入模式需要chrome并特定配置  
 代理模式 只要浏览器可以转发到本机的7802端口，同时设置Barrage的代理服务器地址(如果需要科学上网)  
